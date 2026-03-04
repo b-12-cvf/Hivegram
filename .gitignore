@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (SUPER IMPORTANT - NEVER UPLOAD)
+.env
+
+# Build outputs
+dist/
+build/
+
+# Local database files (For when we add Supabase/SQLite later)
+*.db
+*.sqlite
+*.sqlite3
+
+# OS generated files (Hides your local machine info)
+.DS_Store
+Thumbs.db
