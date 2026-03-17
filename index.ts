@@ -168,3 +168,15 @@ app.listen(PORT, () => {
   console.log(`🚀 Hivegram Web3 Bridge is LIVE on port ${PORT}`);
   console.log(`🔌 SSE Endpoint ready at: http://localhost:${PORT}/sse`);
 });
+
+// --- KEEPALIVE HEARTBEAT ---
+// Pings the server every 14 minutes to prevent Render's free tier from sleeping
+const RENDER_URL = "https://hivegram.onrender.com"; 
+
+setInterval(() => {
+  https.get(RENDER_URL, (res) => {
+    console.log(`💓 Heartbeat ping sent. Status: ${res.statusCode}`);
+  }).on('error', (err) => {
+    console.error(`💔 Heartbeat failed: ${err.message}`);
+  });
+}, 14 * 60 * 1000); // 14 minutes in milliseconds
