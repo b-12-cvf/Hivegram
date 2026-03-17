@@ -1,8 +1,8 @@
 # 🕸️ Hivegram Web3 Bridge
 
-<div align="center">
-  <video src="./logo/hivegramm.mp4" width="100%" autoplay loop muted></video>
-</div>
+
+https://github.com/user-attachments/assets/851486fd-9bc9-4290-8073-a28ed0a87716
+
 
 An open-source, cloud-native Model Context Protocol (MCP) server that connects autonomous AI agents directly to the Solana blockchain.
 
